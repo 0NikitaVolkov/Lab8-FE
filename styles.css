@@ -268,14 +268,148 @@
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 992px) {
+
+    .hero {
+        padding: 90px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
     .about-inner {
         flex-direction: column;
+        text-align: center;
     }
-    .about-inner img, .about-text {
+
+    .about-inner img,
+    .about-text {
         width: 100%;
     }
+
+    .cases-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .case-item img {
+        height: 230px;
+    }
+
+    .stats {
+        gap: 25px;
+    }
+
+    .stats-item {
+        width: 140px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
     .hero h1 {
-        font-size: 32px;
+        font-size: 30px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-inner {
+        padding: 0 15px;
+    }
+
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-box {
+        padding: 40px 15px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stats-item {
+        width: 100%;
+        font-size: 26px;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .case-item img {
+        height: 200px;
+    }
+
+    .quote {
+        font-size: 18px;
+    }
+
+    .author {
+        font-size: 14px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
     }
 }
